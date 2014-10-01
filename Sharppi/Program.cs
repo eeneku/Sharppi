@@ -10,7 +10,14 @@ namespace Sharppi
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World! ");
+            Console.WriteLine("Hello World!");
+
+            Hero hero = new Hero("mörkö", 12, 155.0f, 120.0);
+
+            hero.Print();
+            hero.SetAge(84);
+
+            Console.WriteLine(hero.GetName() + " on nyt " + hero.GetAge() + "-vuotias");
         }
     }
 }
